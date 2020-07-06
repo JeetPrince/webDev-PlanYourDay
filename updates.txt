@@ -1,0 +1,7 @@
+- Decreased the font size of task items on mobile view.
+- Welcome Page hidden if you have entered your name once.
+- Added Some Extra Margin on Tasks Card for Mobile View.
+- Added Spinner For Loading
+
+To Add
+- Icons
