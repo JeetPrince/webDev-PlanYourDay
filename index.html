@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
     <link rel="stylesheet" href="./css/app.min.css">
     <link rel='icon' href='./img/favicon/favicon.ico' type='image/x-icon'>
     <title>Home - PlanYourDay</title>
@@ -11,7 +12,7 @@
 
     <div class="loader"></div>
     
-    <div id="hide-for-loader">
+    <div id="non-loader">
         <div id="wave">
             <img src="./img/home/wave.svg" alt="Wave Background">
         </div>
@@ -19,10 +20,6 @@
             <div class="container">
                 <nav id="navbar">
                     <a href="/webDev-PlanYourDay" class="logo"><img src="./img/logo.png" alt="Logo"></a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                    </ul>
                 </nav>
             </div>
         </header>
@@ -51,27 +48,51 @@
                    <div class="container">
                         <div class="card-header">
                             <div class="card-title">
-                                <h1>Tasks</h1>
-                                <div class="underline-primary"></div>
+                                <div class="title-container">
+                                    <h1>Tasks</h1>
+                                    <div class="underline-primary"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <form action="#" id="taskAdderForm">
                                 <input type="text" class="form-input shadow" id="taskDescription" placeholder="Enter your task description..." autocomplete="off">
+                                <label id="taskTimerLabel" for="taskTimer">
+                                    <span>Set Reminder</span>
+                                    <input type="time" id="taskTimer" class="taskTimer shadow">
+                                </label>
+                                <div class="custom-select">
+                                    <select id="taskPriority" class="shadow">
+                                        <option value="none" selected disabled>Task Priority</option>
+                                        <option value="high">High</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="low">Low</option>
+                                    </select>
+                                </div>
                                 <input type="submit" id="taskAddBtn" class="btn btn-primary shadow-primary" value="Add Task">
                             </form>
                         </div>
                         <div class="card-footer">
                             <div class="line-divider">
                                 <div class="line"></div>
-                                <div class="content">Tasks List</div>
+                                <div class="content">Pending Tasks</div>
                                 <div class="line"></div>
                             </div>
-    
-                            <ul id="tasks-list">
-                                <div class="container">
-                                </div>
-                            </ul>
+                            
+                            <div id="timeline" class="timeline">
+                                <ul id="timeline-list" class="timeline-list">
+                                </ul>
+                            </div>
+
+                            <div class="line-divider">
+                                <div class="line"></div>
+                                <div class="content">Completed Tasks</div>
+                                <div class="line"></div>
+                            </div>
+                            
+                            <div id="completedTasks" class="completed-tasks">
+                                
+                            </div>
                         </div>
                    </div>
                 </div>
@@ -80,6 +101,7 @@
     </div>
 
    
+    <script src="./js/fontawesome.min.js"></script>
     <script src="./js/app.min.js"></script>
 </body>
 </html>

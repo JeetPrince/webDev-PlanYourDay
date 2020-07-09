@@ -1,7 +1,57 @@
+• Update V4 [6/7/2020]
+
+1) Added
 - Decreased the font size of task items on mobile view.
 - Welcome Page hidden if you have entered your name once.
 - Added Some Extra Margin on Tasks Card for Mobile View.
 - Added Spinner For Loading
 
-To Add
-- Icons
+
+• Update V5 [7/7/2020]
+
+1) Added
+- Welcome page hidden for old users (those who have already entered a name)
+- Displays "Welcome Back, your_name_here" 
+- Border Radius Decreased
+- Drop Shadows Decreased
+- Task Reminder Added
+- Added Timestamp when a task is created.
+- Task Adding Layout Re-designed. 
+- Full Validation Added.
+- Added Timeline Style for Tasks List (JS Functionality Added)
+
+2) Removed
+- Navigation Bar
+- Removed (,) when no tasks are assigned
+- Layout for Tasks List (Re-designed)
+
+3) Fixes
+- Error message getting append everytime button clicked
+
+
+• Update V5 [8/7/2020]
+
+1) Added
+- Remove Task Functionality
+- Generating Unique ID for each task
+- Delete Task Feature Added
+- Time Left Feature Added
+- Added Few Icons
+
+2) Removed
+- 
+
+3) Fixes
+- Similar Task ID for Tasks Issue
+
+
+• Update V5 [9/7/2020]
+
+1) Added
+- Added Completed Task Section (Fully Functioning)
+
+2) Removed
+- 
+
+3) Fixes
+- Code Refactoring
